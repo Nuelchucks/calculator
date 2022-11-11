@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Calculator</title>
+    <style>
+
+        body {
+            background-color: orange;
+        }
+        .container {
+            position: relative;
+            display: grid;
+            left: 36%;
+            margin-top: 5%;
+            
+        }
+        input {
+            width: 80px; 
+            height: 80px;
+            margin-inline: -2px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid #f8f9f930;
+        }
+        input:hover {
+            cursor: pointer;
+            background-color: green;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        #display {
+            position: absolute;
+            width: 313.2px;
+            height: 120px;
+            margin-bottom: 39%;
+            background-color: white;
+        }
+        #display:hover {
+            transform: none;
+        }
+        .btns {
+            margin-top: 6.2%;
+        }
+        #c { 
+            width: 159.5px;
+            background-color: red
+            
+        }
+        #plus {
+            position: absolute;
+            height: 160px;
+            margin-left: 2.3px;
+        }
+        #result {
+            background-color: blue;
+        }
+
+
+        @media (max-width: 768px) and (min-width: 767px){
+            .container {
+                margin-top: 5%;
+                width: 80%;
+            }
+            .btns {
+                margin-top: 15%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form name="form1">
+            <input id="display" type="text" name="answer">
+            <br> <br>
+        <div class="btns">
+            <input type="button" value="C" id="c">
+            <input type="button" value="/" id="btn" >
+            <input type="button" value="*" id="btn">
+            <br>
+            <input type="button" value="7" id="btn">
+            <input type="button" value="8" id="btn">
+            <input type="button" value="9" id="btn">
+            <input type="button" value="-" id="btn">
+            <br>
+            <input type="button" value="4" id="btn">
+            <input type="button" value="5" id="btn">
+            <input type="button" value="6" id="btn">
+            <input type="button" value="+" id="plus">
+            <br>
+            <input type="button" value="3" id="btn">
+            <input type="button" value="2" id="btn">
+            <input type="button" value="1" id="btn">
+            <br>
+            <input type="button" value="0" id="btn">
+            <input type="button" value="00" id="btn">
+            <input type="button" value="=" id="result">
+
+            <br> <br>
+
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
